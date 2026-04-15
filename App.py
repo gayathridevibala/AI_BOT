@@ -4,7 +4,7 @@ from transformers import pipeline
 @st.cache_resource
 def load_summarizer():
   return pipeline("summarization", model="t5-small")
-summarizer = load_summarizer()
+  summarizer = load_summarizer()
 
 #streamlit UI
 st.title("EVO AI Text Summarizer")
